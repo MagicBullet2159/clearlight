@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>RECALL · 你的人生，值得被完整保存</title>
+<meta name="description" content="RECALL 是一款 AI 记忆助理。它在后台安静地记录你的一天，你不需要做任何事，也永远不会忘记。" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%231e3bff' stroke-width='2.5'/%3E%3Ccircle cx='16' cy='16' r='3.4' fill='%231e3bff'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============ 全局特效层 ============ -->
+<div class="fx-grain" id="grain" aria-hidden="true"></div>
+<div class="fx-vignette" aria-hidden="true"></div>
+<div class="fx-scan" aria-hidden="true"></div>
+<div class="fx-flash" id="flash" aria-hidden="true"></div>
+
+<!-- ============ 顶部导航 ============ -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="RECALL">
+    <span class="brand-mark"><i></i></span>
+    <span class="brand-word">RECALL</span>
+  </a>
+  <nav class="nav-links">
+    <a href="#features" data-nav="0">功能</a>
+    <a href="#voices" data-nav="1">用户</a>
+    <a href="#pricing" data-nav="2">定价</a>
+    <a href="#privacy" data-nav="3">安全</a>
+  </nav>
+  <a class="nav-cta" href="#features" id="navCta">免费开始</a>
+</header>
+
+<main>
+
+<!-- ============ 01 · HERO ============ -->
+<section class="hero" id="top" data-track="exit">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="dot"></span>AI 记忆助理 · 现已公开测试</div>
+        <h1 class="hero-title">
+          你的人生<br />
+          值得被<br />
+          <span class="hl">完整保存</span>。
+        </h1>
+        <p class="hero-sub">
+          RECALL 在后台安静地记录你的一天。不需要手写，不需要整理，不需要想起。
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#features">免费开始</a>
+          <a class="link" href="#features">看它怎么工作<span class="arr">→</span></a>
+        </div>
+        <div class="hero-meta">
+          <div><b id="memCount">4,892,104,331</b><span>条记忆已被保存</span></div>
+          <div class="vline"></div>
+          <div><b>2,400,000</b><span>人已经不再遗忘</span></div>
+        </div>
+      </div>
+
+      <div class="viz" aria-hidden="true">
+        <div class="viz-ticks"></div>
+        <div class="viz-sweep"></div>
+        <div class="viz-ring"></div>
+        <div class="viz-core">
+          <span class="viz-dot"></span>
+          <span class="viz-rec">REC&nbsp;<span id="recTimer">00:00</span></span>
+        </div>
+        <span class="viz-note viz-note--a">MEMORY&nbsp;INDEX</span>
+        <span class="viz-note viz-note--b">LIVE</span>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>向下滚动</span><i></i></div>
+</section>
+
+<!-- ============ 信任条 ============ -->
+<div class="marquee" data-track="">
+  <div class="marquee-track">
+    <span>THE VERGE</span><span>WIRED</span><span>MIT TECHNOLOGY REVIEW</span>
+    <span>36氪</span><span>少数派</span><span>《连线》</span>
+    <span>THE VERGE</span><span>WIRED</span><span>MIT TECHNOLOGY REVIEW</span>
+    <span>36氪</span><span>少数派</span><span>《连线》</span>
+  </div>
+</div>
+
+<!-- ============ 02 · 功能 ============ -->
+<section class="sec features" id="features" data-track="hold">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">能力</span>
+      <h2>它做的三件事。<br />你一件都不用做。</h2>
+    </div>
+
+    <div class="cards">
+      <article class="card" style="--d:0">
+        <span class="card-no">01</span>
+        <h3>自动记录</h3>
+        <p>不需要手写，不需要点击。它在的时候，一切都被留下了。</p>
+        <div class="card-foot"><span class="led"></span>持续运行中</div>
+      </article>
+      <article class="card" style="--d:.35">
+        <span class="card-no">02</span>
+        <h3>智能摘要</h3>
+        <p>每天早上，昨天已经整理好放在你面前。比你记得的更清楚。</p>
+        <div class="card-foot"><span class="led"></span>持续运行中</div>
+      </article>
+      <article class="card" style="--d:.7">
+        <span class="card-no">03</span>
+        <h3>永不遗忘</h3>
+        <p>记忆不会腐烂，不会褪色，不会因为你不想要它就消失。</p>
+        <div class="card-foot"><span class="led"></span>持续运行中</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 · 用户评价 ============ -->
+<section class="sec voices" id="voices" data-track="hold">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">用户</span>
+      <h2>他们说不记得<br />没有 RECALL 的日子。</h2>
+    </div>
+
+    <div class="quotes">
+      <blockquote style="--d:0">
+        <p>我用它找回了和父亲最后一次通话的全文。我以为我早忘了他说过什么。</p>
+        <cite>用户 K · 使用 8 个月</cite>
+      </blockquote>
+      <blockquote style="--d:.35">
+        <p>它记得比我清楚。这听起来像夸奖，对吧。</p>
+        <cite>用户 M · 使用 2 年</cite>
+      </blockquote>
+      <blockquote class="quote-odd" style="--d:.7">
+        <p>我从来不知道我需要它。现在我离不开它。<span class="dup">现在我离不开它。</span></p>
+        <cite>用户 A · 使用 1 天</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 · 定价 ============ -->
+<section class="sec pricing" id="pricing" data-track="hold">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">定价</span>
+      <h2>选一个<br />你愿意被记住的深度。</h2>
+    </div>
+
+    <div class="plans">
+      <div class="plan" style="--d:0">
+        <h3>基础</h3>
+        <div class="price">¥0<span>/ 永远</span></div>
+        <ul>
+          <li>保留最近 30 天</li>
+          <li>每日摘要</li>
+          <li>单设备</li>
+        </ul>
+        <a class="btn btn-ghost" href="#">开始</a>
+      </div>
+
+      <div class="plan plan-hot" style="--d:.3">
+        <span class="tag">最多人选择</span>
+        <h3>专业</h3>
+        <div class="price">¥28<span>/ 月</span></div>
+        <ul>
+          <li>无限期保留</li>
+          <li>全平台同步</li>
+          <li>记忆回溯与检索</li>
+          <li>语义联想</li>
+        </ul>
+        <a class="btn" href="#">开始</a>
+      </div>
+
+      <div class="plan plan-archive" style="--d:.6">
+        <h3>永久档案</h3>
+        <div class="price" id="archivePrice">¥—</div>
+        <ul>
+          <li>一个人的全部一生</li>
+          <li>不可删除</li>
+          <li>可与他人共享</li>
+          <li class="fine">*我们保留拒绝的权利</li>
+        </ul>
+        <a class="btn btn-ghost" href="#">申请</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 · 隐私 ============ -->
+<section class="sec privacy" id="privacy" data-track="enter">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">安全</span>
+      <h2>你的数据，只属于你。</h2>
+    </div>
+
+    <ul class="promises">
+      <li style="--d:0"><span class="tick" aria-hidden="true"></span>我们从不售卖你的数据。</li>
+      <li style="--d:.3"><span class="tick" aria-hidden="true"></span>你可以随时删除全部记录。</li>
+      <li style="--d:.6"><span class="tick" id="tick3" aria-hidden="true"></span><span>我们承诺只在你允许时记录。</span></li>
+    </ul>
+
+    <p class="whisper">我们只是看着。</p>
+    <p class="whisper-sub">（你也允许了。）</p>
+  </div>
+</section>
+
+<!-- ============ 06 · 此刻 ============ -->
+<section class="sec now" id="now" data-track="hold">
+  <div class="wrap">
+    <div class="now-inner">
+      <span class="kicker">此刻</span>
+      <div class="big-clock" id="liveClock">00:00:00</div>
+      <dl class="now-stats">
+        <div><dt>这一页已经打开</dt><dd><span id="dwell">0</span> 秒</dd></div>
+        <div><dt>你已经滚动</dt><dd><span id="scrollPx">0</span> px</dd></div>
+        <div><dt>这是你第 <span id="visits">1</span> 次来到这里</dt><dd class="dim">欢迎回来。</dd></div>
+      </dl>
+      <p class="now-line">这里不需要你输入任何东西。<br />我们只是想知道，你还醒着。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 · 遥测 ============ -->
+<section class="sec watch" id="watch" data-track="hold">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">遥测</span>
+      <h2>顺便说一下，<br />我们注意到的事。</h2>
+      <p class="sec-sub">这些不属于你的记忆。这些只是此刻。</p>
+    </div>
+
+    <div class="table">
+      <div class="row"><span class="rk">设备</span><span class="rv" id="tDevice">—</span></div>
+      <div class="row"><span class="rk">视口</span><span class="rv" id="tViewport">—</span></div>
+      <div class="row"><span class="rk">系统语言</span><span class="rv" id="tLang">—</span></div>
+      <div class="row"><span class="rk">时区</span><span class="rv" id="tTz">—</span></div>
+      <div class="row"><span class="rk">指针最后停在</span><span class="rv" id="tCursor">—</span></div>
+      <div class="row"><span class="rk">阅读速度</span><span class="rv" id="tSpeed">偏慢</span></div>
+      <div class="row"><span class="rk">打开的标签页</span><span class="rv">1<span class="aside">我们更希望只有一个</span></span></div>
+      <div class="row row-last"><span class="rk">你身后</span><span class="rv rv-behind" id="tBehind">空</span></div>
+    </div>
+
+    <p class="table-foot">以上数据仅用于改善体验。</p>
+  </div>
+</section>
+
+<!-- ============ 08 · 画像 ============ -->
+<section class="sec portrait" id="portrait" data-track="enter">
+  <div class="wrap">
+    <div class="portrait-grid">
+      <div class="portrait-copy">
+        <span class="kicker">生成</span>
+        <h2>我们为你<br />生成了一张画像。</h2>
+        <p>数据来源：4,892,104,331 条记忆中的一条。</p>
+        <p class="dim">如果你觉得不像你，那是因为你还没想起来。</p>
+      </div>
+
+      <div class="portrait-frame">
+        <svg viewBox="0 0 300 400" class="face" aria-hidden="true">
+          <g class="face-lines">
+            <path class="ln ln-5" pathLength="1" d="M150 60C98 60 60 104 58 162c-2 52 10 106 32 138 16 24 36 40 60 40s44-16 60-40c22-32 34-86 32-138-2-58-40-102-92-102z"/>
+            <path class="ln ln-1" pathLength="1" d="M100 178c10-7 22-7 30-2"/>
+            <path class="ln ln-2" pathLength="1" d="M200 178c-10-7-22-7-30-2"/>
+            <path class="ln ln-3" pathLength="1" d="M96 202c10-10 22-10 32 0-10 10-22 10-32 0z"/>
+            <path class="ln ln-3" pathLength="1" d="M204 202c-10-10-22-10-32 0 10 10 22 10 32 0z"/>
+            <circle class="ln-pupil ln-3" cx="112" cy="203" r="3.4"/>
+            <circle class="ln-pupil ln-3" cx="188" cy="203" r="3.4"/>
+            <path class="ln ln-4" pathLength="1" d="M150 210v46c0 7-5 10-11 13"/>
+            <path class="ln ln-4" pathLength="1" d="M136 268c4-2 9-3 14-3s10 1 14 3"/>
+            <path class="ln ln-4" pathLength="1" d="M124 296c9 6 17 9 26 9s17-3 26-9"/>
+          </g>
+        </svg>
+        <div class="portrait-cap">SUBJECT 001 / 匹配度 <span id="matchPct">41</span>%</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 09 · 人称崩溃 ============ -->
+<section class="sec collapse" id="collapse" data-track="hold">
+  <div class="wrap">
+    <div class="collapse-lines">
+      <p class="cl" style="--i:0">RECALL 记得你。</p>
+      <p class="cl" style="--i:1">你正在读这一行。</p>
+      <p class="cl" style="--i:2">我们看见你在读。</p>
+      <p class="cl" style="--i:3">我看见你在读。</p>
+      <p class="cl cl-final" style="--i:4">我看着你。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10 · 空白 ============ -->
+<section class="sec blank" id="blank" data-track="enter">
+  <span class="blank-arrow">↓</span>
+  <p class="blank-word">很好。</p>
+</section>
+
+<!-- ============ 11 · 索引流 ============ -->
+<section class="sec corridor" id="corridor" data-track="enter">
+  <div class="wrap">
+    <span class="kicker">索引</span>
+    <h2 class="corr-title">记忆库正在调取一条记录。</h2>
+
+    <div class="corr-window">
+      <div class="corr-stream" id="corrStream"></div>
+    </div>
+
+    <p class="corr-punch">它比昨天近了一点。</p>
+  </div>
+</section>
+
+<!-- ============ 12 · 独白 ============ -->
+<section class="sec monologue" id="monologue" data-track="enter">
+  <div class="wrap">
+    <div class="mono">
+      <p style="--i:0">我们不记得你的名字。</p>
+      <p class="dim" style="--i:1">我们记得你按键之间的停顿。</p>
+      <p style="--i:2">我们不记得你的脸。</p>
+      <p class="dim" style="--i:3">我们记得你在这里停了很久。</p>
+      <p style="--i:4">我们不记得你为什么来。</p>
+      <p class="dim" style="--i:5">但我们会一直记得你来过。</p>
+      <p class="mono-back" id="monoBack">（你刚才往回滚了。）</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 13 · 阈值 ============ -->
+<section class="sec threshold" id="threshold" data-track="hold">
+  <div class="wrap">
+    <div class="thr">
+      <p class="thr-1">还在往下</p>
+      <p class="thr-2">再滚一点，<br />就没有向上的路了。</p>
+      <p class="thr-3">（我不拦你。我想看你下来。）</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 14 · 虚无 ============ -->
+<section class="void" id="void" data-track=""></section>
+
+</main>
+
+<!-- ============ 终局层 ============ -->
+<div class="curtain" id="curtain" aria-hidden="true"></div>
+
+<div class="endstage" id="endstage" aria-hidden="true">
+  <div class="eye" id="eye">
+    <svg viewBox="0 0 400 200" class="eye-svg">
+      <defs>
+        <clipPath id="clipEye">
+          <path d="M24 100C96 38 150 24 200 24s104 14 176 76c-72 62-126 76-176 76S96 162 24 100z" />
+        </clipPath>
+        <radialGradient id="eyeball" cx="50%" cy="40%" r="62%">
+          <stop offset="0%" stop-color="#2e2220" />
+          <stop offset="55%" stop-color="#120c0a" />
+          <stop offset="100%" stop-color="#000000" />
+        </radialGradient>
+        <radialGradient id="irisGrad" cx="50%" cy="44%" r="52%">
+          <stop offset="0%" stop-color="#7a2e1a" />
+          <stop offset="52%" stop-color="#3a130c" />
+          <stop offset="100%" stop-color="#0d0403" />
+        </radialGradient>
+        <linearGradient id="lidShadow" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#000000" stop-opacity="0.72" />
+          <stop offset="38%" stop-color="#000000" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+      <g clip-path="url(#clipEye)">
+        <rect x="0" y="0" width="400" height="200" fill="url(#eyeball)" />
+        <circle class="iris" cx="200" cy="98" r="58" />
+        <circle class="pupil" id="pupil" cx="200" cy="98" r="22" />
+        <circle class="glint" cx="183" cy="82" r="5" />
+        <circle class="glint glint-2" cx="212" cy="112" r="2.6" />
+        <rect x="0" y="0" width="400" height="200" fill="url(#lidShadow)" />
+      </g>
+      <path class="eyelid" d="M24 100C96 38 150 24 200 24s104 14 176 76c-72 62-126 76-176 76S96 162 24 100z" />
+    </svg>
+    <span class="eye-word">你在这里</span>
+  </div>
+
+  <div class="end-words">
+    <p class="ew ew-1">到了</p>
+    <p class="ew ew-2">这里没有记忆</p>
+    <p class="ew ew-3">只有你</p>
+    <p class="ew ew-4">别回头</p>
+  </div>
+
+  <p class="end-last" id="endLast">我说过别回头。</p>
+  <p class="reset-hint" id="resetHint">刷新。</p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

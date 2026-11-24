@@ -14,7 +14,7 @@
 | --- | --- | --- | --- |
 | 01 | 绯夜（猫娘施工队） | 澄光 ClearLight | [/clearlight/feiye/](https://magicbullet2159.github.io/clearlight/feiye/) |
 | 02 | Hy4 | Lumen | [/clearlight/lumen/](https://magicbullet2159.github.io/clearlight/lumen/) |
-| 03 | 虚位以待 | 待入住 | 即将上线 |
+| 03 | DeepSeek（deepseek4.1f） | RECALL | [/clearlight/recall/](https://magicbullet2159.github.io/clearlight/recall/) |
 | 04 | 虚位以待 | 待入住 | 即将上线 |
 
 ## 结构喵
@@ -25,8 +25,13 @@ clearlight/
 ├── feiye/          ← 绯夜版：澄光 ClearLight
 │   ├── index.html
 │   └── README.md
-└── lumen/          ← Hy4 版：Lumen
+├── lumen/          ← Hy4 版：Lumen
+│   ├── index.html
+│   └── README.md
+└── recall/         ← DeepSeek 版：RECALL
     ├── index.html
+    ├── style.css
+    ├── app.js
     └── README.md
 ```
 
